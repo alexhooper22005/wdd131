@@ -43,3 +43,7 @@ hr {
     width: 80%;
     margin: 30px auto;
 }
+
+.list li {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,50 @@
+body {
+    font-size: 18px;
+}
+
+#content {
+    max-width: 40%;
+    border: 2px solid black;
+    margin: 40px auto;
+    padding: 80px;
+}
+
+img {
+    margin: 0 auto;
+    width: 20%;
+    display: block;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    letter-spacing: 3px;
+}
+h3 {
+    font-style: italic;
+}
+
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+    margin: 30px auto;
+}
+
+h2 {
+    color: #035f9c;
+}
+.intro {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.list li {
+  margin-bottom: 15px;
+  
+}
+
