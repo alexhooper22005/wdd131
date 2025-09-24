@@ -44,3 +44,11 @@ newPara.innerText = "added text here";
 
 const topics = document.querySelector('#topics');
 topics.appendChild(newPara);
+
+const image = document.querySelector('img');
+image.setAttribute('src', 'images/logos.jpg');
+image.setAttribute('alt', 'new logo with black background');
+
+// document.body.className = 'blue'; // look at css for .blue //
+
+document.body.style.backgroundColor = 'lightblue'

@@ -47,3 +47,7 @@ hr {
 .list li {
     margin-bottom: 15px;
 }
+
+.blue {
+    background-color: lightblue;
+}
