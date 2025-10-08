@@ -13,7 +13,10 @@ p {
     text-align: center;
     font-size: 1.5em;
 }
-
+nav a {
+    color: white;
+    margin-right: 20px;
+}
 header {
     background-color: dodgerblue;
     padding: 20px 10px;
@@ -43,14 +46,55 @@ img {
   border: 5px solid white;
 }
 nav {
-    display: none;
+    display: block;
 }
 .menu-btn {
     background: none;     
     border: none;
     font-size: 1em;
     color: white;
+    cursor: pointer;
 }
+dialog {
+  
+  background: transparent; 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;  
+  height: 90vh; 
+}
+
+dialog img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;  /* or 'cover' if you want it to fill completely */
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.8); /* darker background */
+}
+
+.close-viewer {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.hide {
+    display: none;
+}
+
 @media screen and (min-width: 600px) {
 
    
@@ -59,6 +103,7 @@ nav {
         display: grid;
         grid-template-columns: 1fr;
     }
+    
 }
 
 @media screen and (min-width: 700px) {
@@ -74,7 +119,8 @@ nav {
 @media screen and (min-width: 1100px) {
 
     nav {
-        display: block;
+        display: flex;           
+        justify-content: center;
     }
     .menu-btn {
         display: none;
@@ -83,6 +129,20 @@ nav {
     .pics {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    nav.hide {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+
     }
 }
 
