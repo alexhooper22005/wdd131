@@ -1,0 +1,58 @@
+h1 {
+    text-align: center;
+    border-bottom: 2px solid #EFC69B;
+}
+
+nav {
+    text-align: right;
+    border-bottom: 2px solid #EFC69B;
+    padding-bottom: 10px;
+    word-spacing: 30px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: red;
+}
+
+
+.movie-ratings {
+    margin-top: 50px;
+    border-top: 2px solid #EFC69B;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+}
+
+.book1 {
+    grid-column: 3/3;
+    margin: 0;
+}
+
+.bookone {
+    text-align: center;
+    
+}
+
+.bookone h2 {
+    color: red;
+    
+}
+
+.bookone p {
+    
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+@media (min-width:600px) {
+
+    .movie-ratings {
+        display: block;
+        border: none;
+
+    }
+}
