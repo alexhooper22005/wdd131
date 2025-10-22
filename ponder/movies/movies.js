@@ -58,6 +58,7 @@ const movies = [
     </article>`;
 
     movielist.innerHTML += html;
+    movielist.appendChild(article);
     
     });
           
