@@ -17,57 +17,54 @@ nav a {
 }
 
 
-.book1 {
-    grid-column: 3/3;
+.book {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
     margin: 0;
-}
-
-.bookone {
     text-align: center;
-    
+    padding: 1rem 0;
+
 }
 
-.bookone h2 {
+.book-info {
+  text-align: right;
+  padding-right: 1rem;
+  border-right: 2px solid #EFC69B;
+}
+
+.book h2 {
     color: red;
     
 }
 
-.bookone p {
+.book p {
     
     max-width: 500px;
     margin: 0 auto;
 }
-.bookone img {
+.book img {
     max-width: 30%;
 }
 
 
 
 
-@media (min-width:600px) {
+@media (max-width: 600px) {
+  .book {
+    grid-template-columns: 1fr; /* stack in one column */
+    text-align: center;
+  }
 
-    
-    .book-layout {
-        display: grid;
-        grid-template-columns: 1fr 2fr;  /* left narrow, right wider (like the example) */
-        
-    }
-    .book-info {
-        border-top: none;
-        border-right: 2px solid #EFC69B;
-        padding-right: 20px;   /* some spacing */
-        margin-top: 20px;
-        padding-left: 300px;
-        text-align: right;
-    }
-    
-    .book-details {
-        padding-left: 20px;
-    }   
+  .book-info {
+    border-right: none; /* remove dividing line */
+    border-bottom: 2px solid #EFC69B; /* optional horizontal divider */
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 1rem;
+  }
 
-    footer {
-        border-bottom: 2px solid #EFC69B;
-        margin-top: 200px;
-    }
+  .book img {
+    max-width: 50%; /* make the image a bit larger on small screens */
+  }
 }
-
