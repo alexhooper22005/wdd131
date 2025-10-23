@@ -39,4 +39,29 @@ const articles = [
 		stars: "⭐⭐⭐⭐⭐"
 	}
 ];
+
+let booklayout = document.querySelector('#book-layout');
+
+articles.forEach(article => {
+let html = `<article class="book"
+<p>${article.date}</p>
+<p>${article.ages}</p>
+<p>${article.genre}</p>
+<p><strong>Rating:</strong> <span aria-label="${article.stars.length} out of 5 stars" role="img">${article.stars}</span></p>
+</article>`
+
+booklayout.innerHTML += html
+});
+
+let bookdetails = document.querySelector('#book-details');
+
+articles.forEach(article => {
+let html = `<article class="book"
+<h2>${article.title}</h2>
+<img src=${article.imgSrc} alt=${article.imgAlt}>
+<p id='desc'>${article.description}</p>
+</article>`
+
+bookdetails.innerHTML += html
+});
                 
