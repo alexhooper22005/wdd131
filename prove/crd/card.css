@@ -1,0 +1,141 @@
+:root{
+  --card-bg: #dcdcdc;
+  --card-accent: #e0e0e0;
+  --card-shadow: rgba(0,0,0,0.35);
+  --accent-dark: #111;
+  --gap: 18px;
+  --radius: 12px;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Basic page center */
+body{
+  margin: 24px;
+  background: #fff;
+  color: var(--accent-dark);
+}
+
+header h1 {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Card container */
+.card-layout{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap);
+  width: min(1000px, 95%);
+  margin: 12px auto;
+  position: relative;
+}
+
+/* Visual big card */
+.card-top{
+  background: var(--card-bg);
+  padding: 28px;
+  border-radius: var(--radius);
+  box-shadow: 8px 8px 10px var(--card-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+/* large total text */
+.total{
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.card-icon{
+  width: 72px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+  margin-left: 12px;
+}
+
+/* fields area inside a visual card block */
+.card-fields{
+  background: var(--card-bg);
+  padding: 22px;
+  border-radius: var(--radius);
+  box-shadow: 10px 12px 10px rgba(0,0,0,0.28);
+  margin-top: -40px; /* overlap effect */
+}
+
+/* labels & inputs */
+.label-large{
+  font-size: 20px;
+  display:block;
+  margin-bottom:8px;
+}
+label{
+  display:block;
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:6px;
+}
+input[type="text"]{
+  width:100%;
+  padding: 14px 12px;
+  font-size:18px;
+  border-radius:6px;
+  border:2px solid rgba(0,0,0,0.25);
+  box-sizing:border-box;
+}
+
+/* row with columns */
+.card-row{
+  display: grid;
+  grid-template-columns: 1fr 240px 120px;
+  gap: 16px;
+  align-items: end;
+  margin-top: 16px;
+}
+
+/* expiration small inputs */
+.expiration-inputs{
+  display:flex;
+  gap: 8px;
+}
+.expiration-inputs input{
+  width: 64px;
+  text-align:center;
+}
+
+/* cvc small input */
+.cvc-col input{
+  width: 100%;
+  max-width: 110px;
+  text-align:center;
+}
+
+/* actions */
+.form-actions{
+  display:flex;
+  justify-content:flex-end;
+  margin-top: 18px;
+}
+button[type="submit"]{
+  padding: 12px 28px;
+  border-radius: 12px;
+  font-size:18px;
+  background: #f0f0f0;
+  border: 2px solid #111;
+  box-shadow: 4px 6px 6px rgba(0,0,0,0.25);
+}
+
+/* responsive: stack columns on small screens */
+@media (max-width: 700px){
+  .card-row{
+    grid-template-columns: 1fr;
+  }
+  .card-fields{
+    margin-top: -20px;
+  }
+  .card-top{
+    padding: 18px;
+  }
+  .card-layout{ width: 96%; }
+}
