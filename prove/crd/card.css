@@ -1,4 +1,4 @@
-/* ===== General Page Styles ===== */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f3f3f3;
@@ -20,7 +20,6 @@ header h1 {
   text-align: center;
 }
 
-/* ===== Credit Card Container ===== */
 .card-layout {
   background-color: #ccc;
   border-radius: 12px;
@@ -30,7 +29,6 @@ header h1 {
   position: relative;
 }
 
-/* Decorative “back card” shadow layer */
 .card-layout::after {
   content: "";
   position: absolute;
@@ -44,7 +42,6 @@ header h1 {
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* ===== Top Section (Total + Card Icon) ===== */
 .card-top {
   display: flex;
   justify-content: space-between;
@@ -57,7 +54,6 @@ header h1 {
   font-weight: bold;
 }
 
-/* ===== Input Fields ===== */
 .label-large {
   display: block;
   font-size: 1.1rem;
@@ -80,7 +76,6 @@ input {
   gap: 1rem;
 }
 
-/* ===== Row for Holder / Expiration / CVC ===== */
 .card-row {
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -100,7 +95,6 @@ input {
   gap: 0.5rem;
 }
 
-/* ===== Submit Button ===== */
 .form-actions {
   margin-top: 1.5rem;
   text-align: center;
@@ -120,7 +114,6 @@ button:hover {
   background-color: #ddd;
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 480px) {
   .card-layout {
     width: 95%;
