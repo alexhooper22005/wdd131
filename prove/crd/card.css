@@ -1,141 +1,133 @@
-:root{
-  --card-bg: #dcdcdc;
-  --card-accent: #e0e0e0;
-  --card-shadow: rgba(0,0,0,0.35);
-  --accent-dark: #111;
-  --gap: 18px;
-  --radius: 12px;
-  font-family: Georgia, "Times New Roman", serif;
-}
-
-/* Basic page center */
-body{
-  margin: 24px;
-  background: #fff;
-  color: var(--accent-dark);
+/* ===== General Page Styles ===== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header h1 {
-  text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
 }
 
-/* Card container */
-.card-layout{
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--gap);
-  width: min(1000px, 95%);
-  margin: 12px auto;
+.errors {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* ===== Credit Card Container ===== */
+.card-layout {
+  background-color: #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 380px;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
   position: relative;
 }
 
-/* Visual big card */
-.card-top{
-  background: var(--card-bg);
-  padding: 28px;
-  border-radius: var(--radius);
-  box-shadow: 8px 8px 10px var(--card-shadow);
+/* Decorative “back card” shadow layer */
+.card-layout::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #bfbfbf;
+  border-radius: 12px;
+  z-index: -1;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Top Section (Total + Card Icon) ===== */
+.card-top {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  margin-bottom: 1.5rem;
 }
 
-/* large total text */
-.total{
-  font-size: 28px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-.card-icon{
-  width: 72px;
-  height: auto;
-  border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.25);
-  margin-left: 12px;
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-/* fields area inside a visual card block */
-.card-fields{
-  background: var(--card-bg);
-  padding: 22px;
-  border-radius: var(--radius);
-  box-shadow: 10px 12px 10px rgba(0,0,0,0.28);
-  margin-top: -40px; /* overlap effect */
+/* ===== Input Fields ===== */
+.label-large {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
 }
 
-/* labels & inputs */
-.label-large{
-  font-size: 20px;
-  display:block;
-  margin-bottom:8px;
-}
-label{
-  display:block;
-  font-size:18px;
-  font-weight:700;
-  margin-bottom:6px;
-}
-input[type="text"]{
-  width:100%;
-  padding: 14px 12px;
-  font-size:18px;
-  border-radius:6px;
-  border:2px solid rgba(0,0,0,0.25);
-  box-sizing:border-box;
-}
-
-/* row with columns */
-.card-row{
-  display: grid;
-  grid-template-columns: 1fr 240px 120px;
-  gap: 16px;
-  align-items: end;
-  margin-top: 16px;
-}
-
-/* expiration small inputs */
-.expiration-inputs{
-  display:flex;
-  gap: 8px;
-}
-.expiration-inputs input{
-  width: 64px;
-  text-align:center;
-}
-
-/* cvc small input */
-.cvc-col input{
+input {
   width: 100%;
-  max-width: 110px;
-  text-align:center;
+  padding: 0.6rem;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-/* actions */
-.form-actions{
-  display:flex;
-  justify-content:flex-end;
-  margin-top: 18px;
-}
-button[type="submit"]{
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-size:18px;
-  background: #f0f0f0;
-  border: 2px solid #111;
-  box-shadow: 4px 6px 6px rgba(0,0,0,0.25);
+.card-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-/* responsive: stack columns on small screens */
-@media (max-width: 700px){
-  .card-row{
-    grid-template-columns: 1fr;
+/* ===== Row for Holder / Expiration / CVC ===== */
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.card-col label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.exp-col .expiration-inputs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* ===== Submit Button ===== */
+.form-actions {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+button {
+  padding: 0.6rem 1.5rem;
+  background-color: #eee;
+  border: 1px solid #666;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 480px) {
+  .card-layout {
+    width: 95%;
+    padding: 1rem;
   }
-  .card-fields{
-    margin-top: -20px;
+  
+  .card-row {
+    grid-template-columns: 1fr 1fr;
   }
-  .card-top{
-    padding: 18px;
-  }
-  .card-layout{ width: 96%; }
 }

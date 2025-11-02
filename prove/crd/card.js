@@ -73,7 +73,6 @@ function submitHandler(e){
     <div class="success">
       <h2>Thank you for your purchase.</h2>
       <p>Payment processed for <strong>${name}</strong></p>
-      <p class="small">(Demo) This site does not process payments. Use test card: 1234 1234 1234 1234</p>
     </div>
   `;
 }
