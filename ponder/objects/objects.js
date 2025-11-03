@@ -4,7 +4,6 @@
 const aCourse = {
     code: 'WDD131',
     name: 'Javascript Language',
-    hellonoah: 'Noah I know you are grading this',
     logo: '../images/js-logo.png',
     sections: [
     { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T'},
