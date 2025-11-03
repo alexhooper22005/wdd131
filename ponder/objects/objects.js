@@ -22,7 +22,6 @@ const aCourse = {
   };
 
 document.querySelector('#courseName').textContent = aCourse.name;
-document.querySelector('#noahgrading').textContent = aCourse.hellonoah;
 document.querySelector('#courseCode').textContent = aCourse.code;
 
 

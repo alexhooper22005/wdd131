@@ -2,7 +2,7 @@ const aCharacter = {
     name: 'SnortleBlat',
     class: 'Class: Swamp Beast',
     level: 'Level: 5',
-    health: '100',
+    health: 'Health: 100',
     charlogo: '../images/snortleblat.webp'
 };
 
