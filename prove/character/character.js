@@ -14,6 +14,7 @@ const aCharacter = {
         if (this.health <= 0) {
             alert('Character has died');
             this.health = 100;
+            this.level = 5;
         }
         
         return this.health;
@@ -39,6 +40,7 @@ document.querySelector('#health').textContent = `Health: ${aCharacter.health}`;
 document.querySelector('#attack').addEventListener('click', function() {
     aCharacter.attack();
     document.querySelector('#health').textContent = `Health: ${aCharacter.health}`;
+    document.querySelector('#level').textContent = `Level: ${aCharacter.level}`
 }); 
 
 document.querySelector('#levelUp').addEventListener('click', function() {
