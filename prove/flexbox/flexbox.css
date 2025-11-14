@@ -1,14 +1,33 @@
+
+
 #title {
     display: flex;
     justify-content: center;
+
 }
 
 #title img {
     max-width: 100px;
 }
 
-#SearchBar input {
+#title h1 {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 50px;
+}
+
+#SearchBar {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid black 2px;
+    border-radius: 7px;
+    max-width: 495px;
+    margin-left: 8px;
+}
+#Searchbar {
     size: 400px;
+    width: 450px;
+    height: 30px;
 }
 #SearchBar img{
     max-width: 30px;
@@ -16,16 +35,131 @@
 
 #recipes {
     border: solid black 2px;
-    border-radius: 15px;
+    border-radius: 10px;
+    max-width: fit-content;
+    margin-left: 20px;
 }
 
 #recipes img{
     max-width: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 #recipes h1 {
     border: solid gray 2px;
     background-color: lightgray;
     width: 120px;
-    margin: 2px;
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-top: 0px;
 }
+
+#recipes h2 {
+    width: 120px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color:cornflowerblue;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+}
+
+#recipes p {
+    display: none;
+}
+
+.rating {
+    margin-left: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+
+#iconweb {
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+
+   
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #title {
+        width: 50%;
+        max-width: 600px;        /* prevents becoming too wide */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    #title img {
+        max-width: 120px;
+    }
+
+    #title h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    /* --- RECIPE CARD WIDER WITH SPACE ON BOTH SIDES --- */
+    #recipes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 90%;              /* makes it take most of the screen */
+        max-width: 1000px;       /* prevents stretching too far on huge screens */
+
+        margin: 0 auto;          /* centers it */
+        padding: 20px;           /* space inside border */
+        box-sizing: border-box;
+    }
+
+    #recipes img {
+        margin-right: 30px;
+        max-width: 450px;
+    }
+
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recipes p {
+        display: block;
+        max-width: 450px;
+        margin-top: 10px;
+    }
+
+    .rating {
+        margin-bottom: 20px;
+    }
+
+    #SearchBar {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+}
+
