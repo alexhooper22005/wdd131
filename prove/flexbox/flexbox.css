@@ -121,7 +121,6 @@
         text-align: center;
     }
 
-    /* --- RECIPE CARD WIDER WITH SPACE ON BOTH SIDES --- */
     #recipes {
         display: flex;
         flex-direction: row;
@@ -160,6 +159,8 @@
         width: 100%;
         max-width: 1000px;
     }
+
+    
 
 }
 
