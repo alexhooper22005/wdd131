@@ -1,5 +1,6 @@
 
 
+
 #title {
     display: flex;
     justify-content: center;
@@ -33,21 +34,21 @@
     max-width: 30px;
 }
 
-#recipes {
+#recipes-container {
     border: solid black 2px;
     border-radius: 10px;
     max-width: fit-content;
     margin-left: 20px;
 }
 
-#recipes img{
+#recipes-container img{
     max-width: 450px;
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
 }
 
-#recipes h1 {
+#recipes-container h1 {
     border: solid gray 2px;
     background-color: lightgray;
     width: 120px;
@@ -56,7 +57,7 @@
     margin-top: 0px;
 }
 
-#recipes h2 {
+#recipes-container h2 {
     width: 120px;
     padding-left: 10px;
     margin-left: 10px;
@@ -67,7 +68,7 @@
     font-size: 30px;
 }
 
-#recipes p {
+#recipes-container p {
     display: none;
 }
 
@@ -121,7 +122,7 @@
         text-align: center;
     }
 
-    #recipes {
+    #recipes-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -135,7 +136,7 @@
         box-sizing: border-box;
     }
 
-    #recipes img {
+    #recipes-container img {
         margin-right: 30px;
         max-width: 450px;
     }
@@ -145,7 +146,7 @@
         flex-direction: column;
     }
 
-    #recipes p {
+    #recipes-container p {
         display: block;
         max-width: 450px;
         margin-top: 10px;
@@ -159,6 +160,24 @@
         width: 100%;
         max-width: 1000px;
     }
+    .recipe-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    }
+
+    .recipe-card img {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .recipe-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
 
     
 

@@ -76,7 +76,7 @@ let hikeContainer = document.querySelector('#hike-container');
 
 let button = document.querySelector('button')
 
-addEventListener('click', search);
+button.addEventListener('click', search);
 
 function search() {
   let hikeQuery = document.querySelector('#search').value;
