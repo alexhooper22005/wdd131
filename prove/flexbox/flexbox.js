@@ -347,16 +347,21 @@ function difficultyTemplate(rating) {
 
 function recipeTemplate(recipe) {
     return `
-    <div class="recipe-card">
-        <img src="${recipe.image}">
-		<div class="recipe-info"
-			<h1>${tagTemplate(recipe.tags)}</h1>
-			<h2>${recipe.name}</h2>
-			<p>${recipe.description}</p>
-		</div>
+    <div class="recipe-box">
+        <div class="recipe-card">
+            <img src="${recipe.image}" alt="${recipe.name}">
+            <div class="recipe-info">
+                <h1>${tagTemplate(recipe.tags)}</h1>
+                <h2>${recipe.name}</h2>
+                <p>${recipe.description}</p>
+                ${difficultyTemplate(recipe.rating)}
+            </div>
+        </div>
     </div>
     `;
 }
+
+
 
 
 function renderRecipe(recipe) {

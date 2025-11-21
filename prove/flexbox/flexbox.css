@@ -1,3 +1,11 @@
+.recipe-box {
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;   /* space between boxes */
+    background: white;
+    max-width: 900px;
+}
 
 
 
@@ -35,7 +43,7 @@
 }
 
 #recipes-container {
-    border: solid black 2px;
+   
     border-radius: 10px;
     max-width: fit-content;
     margin-left: 20px;
@@ -49,16 +57,14 @@
 }
 
 #recipes-container h1 {
-    border: solid gray 2px;
-    background-color: lightgray;
-    width: 120px;
-    padding-left: 15px;
-    margin-left: 20px;
-    margin-top: 0px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 10px 0;
 }
 
 #recipes-container h2 {
-    width: 120px;
+    /* width: 120px; */
     padding-left: 10px;
     margin-left: 10px;
     margin-top: 0px;
@@ -123,18 +129,13 @@
     }
 
     #recipes-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-
-        width: 90%;              /* makes it take most of the screen */
-        max-width: 1000px;       /* prevents stretching too far on huge screens */
-
-        margin: 0 auto;          /* centers it */
-        padding: 20px;           /* space inside border */
-        box-sizing: border-box;
+        
+        border-radius: 10px;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
     }
+
 
     #recipes-container img {
         margin-right: 30px;
