@@ -1,0 +1,14 @@
+#title {
+    display: flex;
+    text-align: center;
+}
+
+#logo {
+    width: 12%;
+    border: 3px solid #2E6F3F;
+    border-radius: 50%;
+}
+
+#description img {
+    width: 20%;
+}
