@@ -74,11 +74,12 @@ p {
     border: none;
     border-radius: 10px;
     background: #2E6F3F;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: white;
     margin-top: 15px;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-family: "Playfair Display", serif;
 }
 
 
