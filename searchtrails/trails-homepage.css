@@ -1,14 +1,70 @@
+body {
+    background-color: #D9EED2;
+}
+#content {
+    margin: 30px;
+}
 #title {
     display: flex;
-    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+#title h1 {
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    color: #2E6F3F;
 }
 
 #logo {
-    width: 12%;
-    border: 3px solid #2E6F3F;
+    width: fit-content;
+    max-width: 133.5px; 
     border-radius: 50%;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    justify-self: center;
+    font-size: 1.1em;
+}
+
+#description img {
+    min-width: 450px;
+    max-width: 450px; 
 }
 
 #description img {
     width: 20%;
 }
+
+#description p {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center; 
+    line-height: 1.5;
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #2E6F3F;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+#startsearching {
+    width: 473px;
+    font-size: 30px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    border-radius: 12px;
+    color: #FFFFFF;
+    background-color: #2E6F3F;
+}
+
+
