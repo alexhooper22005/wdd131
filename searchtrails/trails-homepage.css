@@ -37,6 +37,8 @@ p {
     padding: 0 10px;
     background: #7BAF6A;
     border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #description {
