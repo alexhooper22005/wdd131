@@ -1,86 +1,132 @@
+
 body {
     background-color: #D9EED2;
+    margin: 0;
+    padding: 0;
 }
+
 #content {
-    margin: 30px;
+    margin: 20px;
 }
+
 #title {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 20px;
     margin-bottom: 20px;
-    
+    align-items: center;
 }
+
 #title h1 {
-    font-size: 50px;
+    font-size: 32px;  
     font-family: "Playfair Display", serif;
     color: #2E6F3F;
 }
 
 #logo {
-    width: fit-content;
-    max-width: 133.5px; 
+    width: 90px;  
     border-radius: 50%;
 }
 
 p {
     font-family: "Inter", sans-serif;
-    justify-self: center;
-    font-size: 1.1em;
-}
-
-#description img {
-    min-width: 450px;
-    max-width: 450px; 
-    border-radius: 8px;
-    margin: 10px 0;
-}
-
-/* #description img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 8px;
-    margin: 10px 0;
-} */
-
-
-#description img {
-    width: 20%;
-}
-
-#description p {
-    margin-left: 5px;
-    margin-right: 5px;
-    text-align: center; 
+    font-size: 1rem;
     line-height: 1.5;
+    text-align: center;
+    padding: 0 10px;
+    background: #7BAF6A;
+    border-radius: 20px;
 }
 
 #description {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     align-items: center;
     padding: 20px;
     background-color: #FFFFFF;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
+#howtouse {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    width: 100%;
+}
+
+#howtouse img {
+    width: 100%;        
+    max-width: 450px; 
+    border-radius: 10px;
+    margin: 15px 0;
+}
 
 #startsearching {
     width: 100%;
-    max-width: 473px;
-    padding: 14px;
+    max-width: 500px;
+    padding: 16px;
     border: none;
     border-radius: 10px;
     background: #2E6F3F;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
-    margin-top: 15px;
+    margin: 0 auto;
     cursor: pointer;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     font-family: "Playfair Display", serif;
+    display: block;
+    margin-top: 15px;
+}
+
+
+@media (min-width: 600px) {
+    #title h1 {
+        font-size: 40px;
+    }
+    #logo {
+        width: 120px;
+    }
+    p {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
 }
 
 
 
+@media (min-width: 800px) {
+
+    #howtouse {
+        flex-direction: row;  
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #howtouse img {
+        width: 50%;            
+        max-width: 400px;
+        margin: 0;
+    }
+
+    #howtouse p {
+        width: 50%;           
+        text-align: left;
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    #title h1 {
+        font-size: 50px;
+    }
+
+    #logo {
+        width: 130px;
+    }
+
+    #description {
+       
+        justify-self: center;
+    }
+}
