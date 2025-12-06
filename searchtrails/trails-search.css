@@ -101,6 +101,11 @@ p {
 
 }
 
+#homebutton:hover {
+
+    background-color: #2E6F3F;
+}
+
 
 @media (min-width: 600px) {
     #title h1 {

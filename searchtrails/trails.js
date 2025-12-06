@@ -1,10 +1,4 @@
-// document.querySelector('#startsearching').addEventListener('click', function() {
-//     window.location.href = "trails-search.html";
-// }); 
 
-// document.querySelector('#homebutton').addEventListener('click', function() {
-//     window.location.href = "trails-homepage.html";
-// }); 
 
 const startBtn = document.querySelector('#startsearching');
 if (startBtn) {
