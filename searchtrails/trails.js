@@ -102,7 +102,7 @@ let trailContainer = document.querySelector('#description');
 const searchBtn = document.querySelector('.searchicon');
 searchBtn.addEventListener('click', search);
 
-const searchInput = document.querySelector('#searchinput');
+const searchInput = document.querySelector('#searchinput');  //used AI to help understand how to search using the enter key
 searchInput.addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
         search();
@@ -127,12 +127,12 @@ function search() {
 function trailTemplate(trail) {
     return `
     <div id="howtouse">
-        <img src="${trail.image}">
+        <img src="${trail.image}" aria-label="Image of ${trail.name}">
         <div id="info">
-            <h1>${trail.name}</h1>
-            <h2>${trail.location}</h2>
+            <h1 aria-label="${trail.name}">${trail.name}</h1>
+            <h2 aria-label="${trail.location}">${trail.location}</h2>
             <p>${difficultyTemplate(trail.rating)}</p>
-            <p>${trail.description}</p>
+            <p aria-label="${trail.description}">${trail.description}</p>
         </div>
     </div>
     `;

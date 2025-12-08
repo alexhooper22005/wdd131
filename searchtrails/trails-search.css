@@ -131,16 +131,17 @@ p {
     }
 
     #howtouse img {
-        width: 50%;            
-        max-width: 400px;
+        /* width: 70%;             */
+        /* max-width: 400px; */
         margin: 0;
     }
 
     #howtouse p {
-        width: 50%;           
+        /* width: 50%;            */
         text-align: left;
         font-size: 1.1rem;
         padding: 0 15px;
+        text-align: center;
     }
 
     #title h1 {
