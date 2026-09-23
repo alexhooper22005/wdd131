@@ -9,7 +9,7 @@ if (startBtn) {
 const homeBtn = document.querySelector('#homebutton');
 if (homeBtn) {
     homeBtn.addEventListener('click', function() {
-        window.location.href = "trails-homepage.html";
+        window.location.href = "index.html";
     });
 }
 
